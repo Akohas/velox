@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.header {
+  background-image: url("../img/index.jpg"); }
+
+.navbar:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.navbar__logo {
+  float: left;
+  margin-top: 25px; }
+
+.navbar__list {
+  float: right;
+  font-size: 0px;
+  margin-top: 40px; }
+
+.navbar__item {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 50px;
+  text-decoration: none; }
+  .navbar__item:last-child {
+    margin-right: 0px; }
+
+.container {
+  height: 645px;
+  padding: 210px 0 150px; }
+
+.center-container {
+  text-align: center; }
+  .center-container__head {
+    font-family: "Lora", serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 58px; }
+  .center-container__discription {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 25px;
+    padding: 45px 0 90px 0; }
+  .center-container__button {
+    cursor: pointer;
+    width: 320px;
+    height: 70px;
+    background-color: #00a5ff;
+    border-radius: 50px;
+    outline: 0;
+    border: 0;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s; }
+    .center-container__button:active {
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); }
+
+.block-first {
+  text-align: center;
+  padding-top: 75px; }
+  .block-first__head {
+    font-family: "Lora", serif;
+    font-size: 42px;
+    color: #3a3f4b;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative; }
+    .block-first__head::after {
+      content: "";
+      display: block;
+      width: 147px;
+      margin: 0px auto 0px;
+      height: 4px;
+      background-color: #00a5ff; }
+
+.services-list {
+  padding-top: 120px; }
+  .services-list__item {
+    display: inline-block;
+    max-width: 260px;
+    margin-right: 35px; }
+    .services-list__item:last-child {
+      margin-right: 0px; }
+  .services-list__header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 90px 0 38px;
+    text-transform: uppercase; }
+  .services-list__description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #999999;
+    line-height: 20px; }
+
+.logo-design-block__header,
+.web-design-block__header,
+.branding-block__header,
+.illustrations-block__header {
+  position: relative; }
+  .logo-design-block__header::after,
+  .web-design-block__header::after,
+  .branding-block__header::after,
+  .illustrations-block__header::after {
+    content: "";
+    width: 41px;
+    height: 2px;
+    background-color: #999999;
+    position: absolute;
+    left: calc(50% - 20.5px);
+    bottom: 16px;
+    margin: 0 auto; }
+
+.logo-design-block__header::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 20px;
+  left: calc(50% - 17.5px);
+  background: url(../img/logo-design.png) no-repeat; }
+
+.web-design-block__header::before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 35px;
+  top: 20px;
+  left: calc(50% - 21.5px);
+  background: url(../img/web-design.png) no-repeat; }
+
+.branding-block__header::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 35px;
+  top: 20px;
+  left: calc(50% - 11.5px);
+  background: url(../img/branding.png) no-repeat; }
+
+.illustrations-block__header::before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 35px;
+  top: 20px;
+  left: calc(50% - 21px);
+  background: url(../img/illustration.png) no-repeat; }
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto; }
