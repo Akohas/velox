@@ -310,7 +310,104 @@ a {
 
 .block-fourth {
   background-color: #f5f6f8;
-  text-align: center; }
+  text-align: center;
+  padding-top: 70px; }
+
+ol {
+  list-style: none; }
+
+.prev,
+.next {
+  display: block;
+  text-indent: -9999px; }
+
+.prev {
+  background-image: url(../img/icon_right.png);
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.next {
+  background-image: url(../img/icon_left.png);
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.testimonials {
+  position: relative;
+  width: 100%;
+  padding: 100px 0; }
+
+.testimonials .prev,
+.testimonials .next {
+  float: left;
+  position: absolute;
+  top: 50%;
+  margin: -50px 0 0 0;
+  width: 3.5%;
+  height: 100px;
+  display: block; }
+
+.testimonials .prev {
+  left: 0;
+  background-position: 60% 50%; }
+
+.testimonials .next {
+  right: 0;
+  background-position: 40% 50%; }
+
+.slider-content__discription {
+  margin: 50px auto 0;
+  width: 600px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: #3a3f4b; }
+
+.block-fifth {
+  background-color: #3b404c;
+  color: #f5f6f8; }
+  .block-fifth:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.contact-header {
+  padding-top: 70px; }
+  .contact-header__logo {
+    float: left;
+    font-family: "Lora", serif;
+    font-size: 33px;
+    font-weight: 600; }
+  .contact-header__navbar {
+    float: right;
+    font-size: 0px; }
+  .contact-header__item {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    margin-right: 30px; }
+    .contact-header__item:last-child {
+      margin-right: 0px; }
+
+.contact-details {
+  padding-top: 80px;
+  width: 350px; }
+  .contact-details__item {
+    padding: 30px 0; }
+
+.contact-form {
+  display: inline-block; }
+  .contact-form__head {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 28px;
+    text-transform: uppercase; }
+  .contact-form__description {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #999999; }
 
 .wrapper {
   width: 1170px;

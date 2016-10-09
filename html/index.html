@@ -7,8 +7,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">	
 	<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css">	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"  type="text/javascript"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"  type="text/javascript"></script> -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script src="../js/main.js"></script>
+	<script src="../js/plugin.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.slidewrap').carousel({
+				slider: '.slider',
+				slide: 'li',
+				nextSlide: '.next',
+				prevSlide: '.prev',
+				speed: 500 // ms.
+			});			
+		});
+	</script>
 
 </head>
 <body>
@@ -139,7 +153,60 @@
 <div class="block-fourth">
 	<div class="wrapper">
 		<div class="block-fourth__head head-bar">See what others are saying about us</div>
+
+
+		<div class="testimonials">
+			<a href="#slider1" class="next"></a>
+			<a href="#slider1" class="prev"></a>
+			<div class="slidewrap">
+				<ol class="slider" id="slider1">
+					<li>
+						<div class="slider-content">
+							<img src="../img/slide1.png">
+							<div class="slider-content__discription">
+								"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus"<br><br>
+								Linda from <a href='#' style="text-decoration: underline">example.com</a>
+							</div>
+						</div>
+					</li>
+					<li>	
+							content
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="block-fifth">
+	<div class="wrapper">
+		<div class="contact-header">
+			<div class="contact-header__logo">Contact us</div>
+			<div class="contact-header__navbar">
+				<div class="contact-header__item">Home</div>
+				<div class="contact-header__item">About</div>
+				<div class="contact-header__item">Services</div>
+				<div class="contact-header__item">Blog</div>
+				<div class="contact-header__item">Contact Us</div>	
+			</div>
+		</div>
+		<div class="contant-form">
+			<div class="contact-details">
+				<div class="contact-details__item">
+					<div class="contact-form__head">our address</div>
+					<div class="contact-form__description">House No 123456, sector 34, Guargaon 34535, India</div>
+				</div>
+				<div class="contact-details__item">				
+					<div class="contact-form__head">call us</div>
+					<div class="contact-form__description">+3995949509<br>+59694035</div>
+				</div>
+				<div class="contact-details__item">				
+					<div class="contact-form__head">Email us</div>
+					<div class="contact-form__description">contacts@email.com</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </body>
 </html>
+
