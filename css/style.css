@@ -43,6 +43,24 @@ table {
 * {
   box-sizing: border-box; }
 
+.head-bar {
+  font-family: "Lora", serif;
+  font-size: 42px;
+  color: #3a3f4b;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative; }
+  .head-bar::after {
+    content: "";
+    display: block;
+    width: 147px;
+    margin: 30px auto 0px;
+    height: 4px;
+    background-color: #00a5ff; }
+
+a {
+  text-decoration: none; }
+
 .header {
   background: url("../img/index.jpg") center no-repeat;
   background-size: cover; }
@@ -203,20 +221,6 @@ table {
   padding-top: 46px;
   padding-bottom: 80px;
   background-color: #f5f6f8; }
-  .block-second__head {
-    font-family: "Lora", serif;
-    font-size: 42px;
-    color: #3a3f4b;
-    font-weight: 600;
-    text-transform: uppercase;
-    position: relative; }
-    .block-second__head::after {
-      content: "";
-      display: block;
-      width: 147px;
-      margin: 30px auto 0px;
-      height: 4px;
-      background-color: #00a5ff; }
   .block-second__button {
     margin-top: 62px;
     cursor: pointer;
@@ -245,6 +249,23 @@ table {
   margin: 0 30px;
   text-transform: uppercase;
   font-weight: 500; }
+  .portfolio-menu__item:hover {
+    color: #00a5ff; }
+
+.tabs_divs div {
+  display: none; }
+
+.tabs_divs div.active {
+  display: block; }
+
+.tabs li.active {
+  color: #00a5ff; }
+  .tabs li.active::after {
+    content: "";
+    display: block;
+    margin: 10px auto 0px;
+    height: 1px;
+    background-color: #00a5ff; }
 
 .portfolio-content {
   padding: 50px 0 0 0;
@@ -261,61 +282,19 @@ table {
     .portfolio-content__block:first-child, .portfolio-content__block:nth-child(4) {
       margin-left: 0px; }
 
-.agency-block__image {
-  width: 380px;
-  height: 280px;
-  background: url("../img/1portfolio.png") no-repeat; }
-
-.vodka-block__image {
-  width: 380px;
-  height: 280px;
-  background: url("../img/2portfolio.png") no-repeat; }
-
-.web-block__image {
-  width: 380px;
-  height: 280px;
-  background: url("../img/3portfolio.png") no-repeat; }
-
-.everest-block__image {
-  width: 380px;
-  height: 280px;
-  background: url("../img/4portfolio.png") no-repeat; }
-
-.poster-block__image {
-  width: 380px;
-  height: 280px;
-  background: url("../img/5portfolio.png") no-repeat; }
-
-.illustration-block__image {
-  width: 380px;
-  height: 280px;
-  background: url("../img/6portfolio.png") no-repeat; }
-
 .portfolio-content__discription {
-  vertial-align: bottom;
   font-family: "Open Sans", sans-serif;
   color: #999999;
   font-size: 18px;
-  font-width: 600;
-  padding-top: 25px; }
+  font-weight: 600;
+  padding-top: 25px;
+  display: block; }
 
 .block-third {
   padding-bottom: 128px;
   text-align: center;
-  padding-top: 70px; }
-  .block-third__head {
-    text-transform: uppercase;
-    font-width: 600;
-    font-size: 42px;
-    font-family: "Lora", serif;
-    color: #3a3f4b; }
-    .block-third__head::after {
-      content: "";
-      display: block;
-      width: 147px;
-      margin: 30px auto 0px;
-      height: 4px;
-      background-color: #00a5ff; }
+  padding-top: 70px;
+  font-size: 0; }
   .block-third__brand-item {
     margin-top: 91px;
     width: 150px;
@@ -329,40 +308,9 @@ table {
     .block-third__brand-item:hover {
       opacity: 1; }
 
-.bakery {
-  background: url("../img/1brand.png") no-repeat; }
-
-.cavalier {
-  background: url("../img/2brand.png") no-repeat; }
-
-.harvest {
-  background: url("../img/3brand.png") no-repeat; }
-
-.landlock {
-  background: url("../img/4brand.png") no-repeat; }
-
-.spectrum {
-  background: url("../img/5brand.png") no-repeat; }
-
-.home-energy {
-  background: url("../img/6brand.png") no-repeat; }
-
 .block-fourth {
-  background-color: #f5f6f8; }
-  .block-fourth__head {
-    font-size: 42px;
-    font-family: "Lora", serif;
-    color: #3a3f4b;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center; }
-    .block-fourth__head::after {
-      content: "";
-      display: block;
-      width: 147px;
-      margin: 30px auto 0px;
-      height: 4px;
-      background-color: #00a5ff; }
+  background-color: #f5f6f8;
+  text-align: center; }
 
 .wrapper {
   width: 1170px;

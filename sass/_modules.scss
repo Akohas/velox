@@ -1,6 +1,25 @@
 @import 'variables';
 @import 'mixins';
 
+.head-bar{
+font-family: $lora;
+		font-size: 42px;
+		color: $font-blue-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+		&::after{
+			content: "";
+			display:block;
+			width: 147px;
+			margin:30px auto 0px;
+			height: 4px;
+			background-color: $first-blue-color;
+		}
+}	
+a {
+	text-decoration: none;
+}
 .header{
 	background: url("../img/index.jpg") center no-repeat;
 	background-size: cover;
@@ -197,23 +216,6 @@ text-align: center;
 padding-top: 46px;
 padding-bottom: 80px;
 background-color: $grey-background;
-	&__head{
-		font-family: $lora;
-		font-size: 42px;
-		color: $font-blue-color;
-		font-weight: 600;
-		text-transform: uppercase;
-		position: relative;
-		&::after{
-			content: "";
-			display:block;
-			width: 147px;
-			margin:30px auto 0px;
-			height: 4px;
-			background-color: $first-blue-color;
-
-		}
-	}
 &__button{
 	margin-top: 62px;
 	cursor: pointer;
@@ -234,8 +236,8 @@ background-color: $grey-background;
 		box-shadow: 3px 3px 10px rgba(0,0,0,.3);
 		}
 	}
-
 }
+
 .portfolio-menu{
 &__item{
 		font-family: $open-sans;
@@ -246,8 +248,28 @@ background-color: $grey-background;
 		margin: 0 30px;
 		text-transform: uppercase; 
 		font-weight: 500;
+		&:hover{
+		color: $first-blue-color;
 		}
+	}
 }
+.tabs_divs div{
+    display: none;
+}
+.tabs_divs div.active{
+    display: block;
+}
+.tabs li.active{
+color: $first-blue-color;
+	&::after{
+	content: "";
+	display: block;
+	margin: 10px auto 0px;
+	height: 1px;
+	background-color: $first-blue-color;
+	}
+}
+
 .portfolio-content{
 	padding: 50px 0 0 0;
 	font-size: 0px;
@@ -264,80 +286,25 @@ background-color: $grey-background;
 			&:nth-child(4){
 				margin-left: 0px;
 			}
+
 	}
 }
 
-.agency-block{
-&__image{
-	width: 380px;
-	height: 280px;
-	background: url("../img/1portfolio.png") no-repeat;
-	}
-}
-.vodka-block{
-&__image{
-	width: 380px;
-	height: 280px;
-	background: url("../img/2portfolio.png") no-repeat;
-	}
-}
-.web-block{
-&__image{
-	width: 380px;
-	height: 280px;
-	background: url("../img/3portfolio.png") no-repeat;
-	}
-}
-.everest-block{
-&__image{
-	width: 380px;
-	height: 280px;
-	background: url("../img/4portfolio.png") no-repeat;
-	}
-}
-.poster-block{
-&__image{
-	width: 380px;
-	height: 280px;
-	background: url("../img/5portfolio.png") no-repeat;
-	}
-}
-.illustration-block{
-&__image{
-	width: 380px;
-	height: 280px;
-	background: url("../img/6portfolio.png") no-repeat;
-	}
-}
 .portfolio-content__discription{
-	vertial-align: bottom;
 	font-family: $open-sans;
 	color: $font-grey-color;
 	font-size: 18px;
-	font-width: 600;
+	font-weight: 600;
 	padding-top: 25px;
-}
+	display:block;
 
+}
 
 .block-third{
 padding-bottom: 128px;
 text-align: center;
 padding-top: 70px;
-	&__head{
-	text-transform: uppercase;
-	font-width: 600;
-	font-size: 42px;
-	font-family: $lora;
-	color: $font-blue-color;
-		&::after{
-			content: "";
-			display:block;
-			width: 147px;
-			margin:30px auto 0px;
-			height: 4px;
-			background-color: $first-blue-color;
-		}
-	}
+font-size: 0;
 	&__brand-item{
 	margin-top: 91px;
 	width: 150px;
@@ -355,44 +322,8 @@ padding-top: 70px;
 }
 }
 
-.bakery{
-	background: url("../img/1brand.png") no-repeat;
-}
-.cavalier{
-	background: url("../img/2brand.png") no-repeat;
-}
-.harvest{
-	background: url("../img/3brand.png") no-repeat;
-}
-.landlock{
-	background: url("../img/4brand.png") no-repeat;
-}
-.spectrum{
-	background: url("../img/5brand.png") no-repeat;
-}
-.home-energy{
-	background: url("../img/6brand.png") no-repeat;
-}
-
-
 .block-fourth{
 background-color: $grey-background;
-	&__head{
-	  font-size: 42px;
-	  font-family: $lora;
-	  color: $font-blue-color;
-	  font-weight: 600;
-	  text-transform: uppercase;
-	  text-align: center;
-	  &::after{
-	  	content: "";
-		display:block;
-		width: 147px;
-		margin:30px auto 0px;
-		height: 4px;
-		background-color: $first-blue-color;
-
-	  }
-	  }
+text-align: center;
 }
 

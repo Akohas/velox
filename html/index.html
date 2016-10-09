@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">	
 	<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css">	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"  type="text/javascript"></script>
+	<script src="../js/main.js"></script>
+
 </head>
 <body>
 <header class="header">
@@ -32,8 +35,7 @@
 </header>
 <div class="block-first">
 	<div class="wrapper">
-		<div class="block-first__head">Our Services</div>
-		
+		<div class="block-first__head head-bar">Our Services</div>
 		<div class="block-first__list services-list">
 			<div class="services-list__item logo-design-block">
 				<div class="services-list__header logo-design-block__header">LOGO DESIGN</div>
@@ -52,72 +54,91 @@
 				<div class="services-list__description illustrations-block__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</div>
 			</div>
 		</div>
-</div>
+	</div>
 </div>
 <div class="block-second">
 	<div class="wrapper">
-	<div class="block-second__head">portfolio</div>
-	<div class="portfolio-menu">
-			<div class="portfolio-menu__item">All</div>
-			<div class="portfolio-menu__item">illustrations</div>
-			<div class="portfolio-menu__item">LOGO</div>
-			<div class="portfolio-menu__item">branding</div>
-			<div class="portfolio-menu__item">WEB DESIGN</div>
-			</div>
-			<div class="portfolio-content">
-				<div class="portfolio-content__block agency-block">
-					<div class="agency-block__image"></div>
-						<div class="portfolio-content__discription agency-block__discription">Agency - PSD Template</div>
+		<div class="block-second__head head-bar">portfolio</div>
+		<div class="main_tabs_div">
+			<ul class="portfolio-menu tabs">
+				<li class="portfolio-menu__item active">All</li>
+				<li class="portfolio-menu__item">illustrations</li>
+				<li class="portfolio-menu__item">LOGO</li>
+				<li class="portfolio-menu__item">branding</li>
+				<li class="portfolio-menu__item">WEB DESIGN</li>
+			</ul>
+			<div class="tabs_divs">
+				<div class="portfolio-content active">
+					<a href="#" class="portfolio-content__block agency-block">
+						<img src="../img/1portfolio.png" class="agency-block__image">
+						<span class="portfolio-content__discription agency-block__discription">Agency - PSD Template</span>
+					</a>
+					<a href="#" class="portfolio-content__block vodka-block">
+						<img src="../img/2portfolio.png" class="vodka-block__image">
+						<span class="portfolio-content__discription vodka-block__discription">Pure Vodka Branding</span>
+					</a>
+					<a href="#" class="portfolio-content__block web-block">
+						<img src="../img/3portfolio.png"  class="web-block__image">
+						<span class="portfolio-content__discription web-block__discription">
+						Web Design	
+						</span>
+					</a>
+					<a href="#" class="portfolio-content__block everest-block">
+						<img src="../img/4portfolio.png" class="everest-block__image">
+						<span class="portfolio-content__discription everest-block__discription">
+						Everest Logo	
+						</span>
+					</a>
+					<a href="#" class="portfolio-content__block poster-block">
+						<img src="../img/5portfolio.png" class="poster-block__image">
+						<span class="portfolio-content__discription poster-block__discription">
+						Poster Design
+						</span>
+					</a>
+					<a href="#" class="portfolio-content__block illustration-block">
+						<img src="../img/6portfolio.png" class="illustration-block__image">
+						<span class="portfolio-content__discription illustration-block__discription">
+						illustration	
+						</span>
+					</a>
 				</div>
-			<div class="portfolio-content__block vodka-block">
-				<div class="vodka-block__image"></div>
-				<div class="portfolio-content__discription vodka-block__discription">Pure Vodka Branding</div>
+				<div>content</div>
+				<div>content</div>
+				<div>content</div>
+				<div>content</div>
 			</div>
-			<div class="portfolio-content__block web-block">
-				<div class="web-block__image"></div>
-				<div class="portfolio-content__discription web-block__discription">
-				Web Design	
-				</div>
 			</div>
-			<div class="portfolio-content__block everest-block">
-				<div class="everest-block__image"></div>
-				<div class="portfolio-content__discription everest-block__discription">
-				Everest Logo	
-				</div>
+				<button class="block-second__button">SHOW MORE</button>
 			</div>
-			<div class="portfolio-content__block poster-block">
-				<div class="poster-block__image"></div>
-				<div class="portfolio-content__discription poster-block__discription">
-				Poster Design
-				</div>
-			</div>
-			<div class="portfolio-content__block illustration-block">
-				<div class="illustration-block__image"></div>
-				<div class="portfolio-content__discription illustration-block__discription">
-				illustration	
-				</div>
-			</div>
-	</div>	
-	</div>
-	<button class="block-second__button">SHOW MORE</button>
 </div>
 <div class="block-third">
 	<div class="wrapper">
-		<div class="block-third__head">Recent Brands we've worked with</div>
+		<div class="block-third__head head-bar">Recent Brands we've worked with</div>
 		<div class="block-third__brand-list">
-			<div class="block-third__brand-item bakery"></div>
-			<div class="block-third__brand-item cavalier"></div>
-			<div class="block-third__brand-item harvest"></div>
-			<div class="block-third__brand-item landlock"></div>
-			<div class="block-third__brand-item spectrum"></div>
-			<div class="block-third__brand-item home-energy"></div>
+			<a href="#" class="block-third__brand-item bakery">
+				<img src="../img/1brand.png">
+			</a>
+			<a href="#" class="block-third__brand-item cavalier">
+					<img src="../img/2brand.png">
+			</a>
+			<a href="#" class="block-third__brand-item harvest">
+					<img src="../img/3brand.png">
+			</a>
+			<a href="#" class="block-third__brand-item landlock">
+					<img src="../img/4brand.png">
+			</a>
+			<a href="#" class="block-third__brand-item spectrum">
+					<img src="../img/5brand.png">
+			</a>
+			<a href="#" class="block-third__brand-item home-energy">
+					<img src="../img/6brand.png">
+			</a>
 		</div>
 	</div>
 </div>
 <div class="block-fourth">
 	<div class="wrapper">
-		<div class="block-fourth__head">See what others are saying about us</div>
-		
+		<div class="block-fourth__head head-bar">See what others are saying about us</div>
 	</div>
 </div>
 </body>
