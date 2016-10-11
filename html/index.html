@@ -5,23 +5,10 @@
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">	
 	<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="../css/style.css">	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script src="../js/main.js"></script>
-	<script src="../js/plugin.js" type="text/javascript"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.slidewrap').carousel({
-				slider: '.slider',
-				slide: 'li',
-				nextSlide: '.next',
-				prevSlide: '.prev',
-				speed: 500 // ms.
-			});			
-		});
-	</script>
-
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/owl.carousel.css">
+	<link rel="stylesheet" href="../css/owl.theme.css">	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -182,43 +169,29 @@
 <div class="block-fourth">
 	<div class="wrapper">
 		<div class="block-fourth__head head-bar">See what others are saying about us</div>
-
-
 		<div class="testimonials">
-			<a href="#slider1" class="next">
-			</a>
-			<a href="#slider1" class="prev"></a>
-			<div class="slidewrap">
-				<ol class="slider" id="slider1">
-					<li>
-						<div class="slider-content">
-							<img src="../img/slide1.png">
-							<div class="slider-content__discription">
-								"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus"<br><br>
-								Linda from <a href='#' style="text-decoration: underline">example.com</a>
-							</div>
-					</li>
-					<li>	
-						<div class="slider-content">
-							<img src="../img/slider2.png">
-							<div class="slider-content__discription">
-								"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus"<br><br>
-								Linda from <a href='#' style="text-decoration: underline">example.com</a>
-							</div>						
-						</div>
-					</li>
-					<li>	
-						<div class="slider-content">
-							<img src="../img/slider2.png">
-							<div class="slider-content__discription">
-								"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus"<br><br>
-								Linda from <a href='#' style="text-decoration: underline">example.com</a>
-							</div>						
-						</div>
-					</li>
-				</ol>
-			</div>
-		</div>
+        	<div id="owl-slider" class="slider">	
+                <div class="slider__item">
+                	<img src="../img/slide1.png">
+					<div class="slider__description">
+					"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus"<br><br>
+					Linda from <a href='#' style="text-decoration: underline">example.com</a>
+					</div>
+                </div>
+                <div class="slider__item"><img src="../img/slider2.png">
+					<div class="slider__description">
+						"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus"<br><br>
+						Linda from <a href='#' style="text-decoration: underline">example.com</a>
+					</div>
+				</div>
+                <div class="slider__item"><img src="../img/slider2.png">
+					<div class="slider__description">
+						"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus"<br><br>
+						Linda from <a href='#' style="text-decoration: underline">example.com</a>
+					</div>
+				</div>
+        	</div>  
+ 		</div>
 	</div>
 </div>
 <div class="block-fifth">
@@ -290,6 +263,23 @@
 		</div>
 	</div>
 </footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/owl.carousel.js"></script>
+ <script>
+    $(document).ready(function() {
+      $("#owl-slider").owlCarousel({
+
+      navigation : true,
+      slideSpeed : 400,
+      paginationSpeed : 400,
+      singleItem : true
+
+      });
+    });
+    </script>
+
 </body>
 </html>
 
