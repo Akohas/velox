@@ -16,6 +16,25 @@ font-family: $lora;
 			height: 4px;
 			background-color: $first-blue-color;
 		}
+}
+.button{
+	cursor: pointer;
+	width:280px;
+	height: 65px; 
+	background-color: $first-blue-color;
+	border-radius: 50px;
+	outline: 0;
+	border: 0;
+	font-size: 18px;
+	font-family: $open-sans;
+	font-weight: 500;
+	color: #fff;
+	font-weight: 500;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+	transition: 0.3s;
+	&:active{
+		box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+		}
 }	
 a {
 	text-decoration: none;
@@ -38,7 +57,7 @@ a {
 	}
 	&__item{
 		display: inline-block;
-		font-family: $open-sans; 
+		font-family: $open-sans;
 		font-size: 14px;
 		color: #fff;
 		margin-right: 50px;
@@ -70,24 +89,6 @@ a {
 		padding: 45px 0 90px 0;
 	}
 
-	&__button{
-		cursor: pointer;
-		width:320px;
-		height: 70px; 
-		background-color: $first-blue-color;
-		border-radius: 50px;
-		outline: 0;
-		border: 0;
-		font-size: 25px;
-		font-family: $open-sans;
-		color: #fff;
-		font-weight: 500;
-		box-shadow: 1px 1px 5px rgba(0,0,0,.3);
-		transition: 0.3s;
-		&:active{
-			box-shadow: 3px 3px 10px rgba(0,0,0,.3);
-		}
-	}
 
 }
 
@@ -218,23 +219,6 @@ padding-bottom: 80px;
 background-color: $grey-background;
 &__button{
 	margin-top: 62px;
-	cursor: pointer;
-	width:280px;
-	height: 65px; 
-	background-color: $first-blue-color;
-	border-radius: 50px;
-	outline: 0;
-	border: 0;
-	font-size: 18px;
-	font-family: $open-sans;
-	font-weight: 500;
-	color: #fff;
-	font-weight: 500;
-	box-shadow: 1px 1px 5px rgba(0,0,0,.3);
-	transition: 0.3s;
-	&:active{
-		box-shadow: 3px 3px 10px rgba(0,0,0,.3);
-		}
 	}
 }
 
@@ -289,7 +273,6 @@ color: $first-blue-color;
 
 	}
 }
-
 .portfolio-content__discription{
 	font-family: $open-sans;
 	color: $font-grey-color;
@@ -357,6 +340,9 @@ ol{
 	width: 100%; 
 	padding: 100px 0; 
 }
+.disabled{
+	opacity: 0.5;
+}
 .testimonials .prev,
 .testimonials .next {
 	float: left;
@@ -384,12 +370,32 @@ ol{
 	background-color: #3b404c;
 	@include clearfix;
 	color: $grey-background;
+	&__arrow{
+		margin: 0 auto;
+		width: 70px;
+		height: 70px;
+		border-radius: 50px;
+		background-color: $first-blue-color;
+		font-size: 30px;
+		color: #ffffff;
+		outline: 0;
+		border: 0;
+		box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+		transition: 0.3s;
+		position: relative;
+		top: 35px;
+		&:active{
+			box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+		}
+	}
 
 }
 
 
 .contact-header{
-	padding-top: 70px;
+
+	padding-top: 80px;
+	padding-bottom: 100px;
 	&__logo{
 		float: left;
 		font-family: $lora;
@@ -413,14 +419,15 @@ ol{
 }
 
 .contact-details{
-	padding-top: 80px;
 	width: 350px;
+	float: left;
 	&__item{
 		padding: 30px 0;
 	}	
 }
 .contact-form{
 display:inline-block;
+width: 1170px;
 	&__head{
 		font-family: $open-sans;
 		font-weight: 600;
@@ -436,5 +443,80 @@ display:inline-block;
 	color: $font-grey-color;
 
 	}
+}
 
+
+.contact-input{
+	padding-top: 10px;
+	float: right;
+	font-family: $open-sans;
+	font-size: 25px;
+	font-weight: 500;
+	padding-left: 60px;
+	&__subject{
+		float: right;
+		width: 360px;
+	}
+	&__name{
+		float: left;
+		width: 360px;
+	}
+	&__message{
+	clear: both;
+	padding-top: 60px;
+	}
+	&__button{
+	margin-top: 40px;
+	
+	}
+}
+
+
+
+input {
+	color: #ffffff;
+	display: inline-block;
+	width: 360px;
+	height: 60px;
+	font-size: 20px;
+	border: 0px;
+	border-bottom: 2px solid $font-grey-color;;
+	background-color: #3b404c;
+	&:focus{
+		border-bottom: 2px solid $first-blue-color;
+		}
+}
+
+textarea{
+	margin-top: 10px;
+	color: #ffffff;
+	font-size: 20px;
+	display: inline-block;
+	width: 750px;
+	height: 150px;
+	font-size: 20px;
+	border: 0px;
+	border-bottom: 2px solid $font-grey-color;;
+	background-color: #3b404c;
+	resize: none;
+	&:focus{
+		border-bottom: 2px solid $first-blue-color;
+		}
+}
+.footer{
+	@include clearfix;
+
+	&__copy{
+	padding: 40px 0 40px;
+	float: left;
+	color: $font-grey-color;
+	font-size: 13px;
+	}
+	&__networks{
+	float: right;
+	padding: 30px 0 30px;
+	}
+}
+.button-center{
+	text-align: center;
 }
